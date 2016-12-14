@@ -16,7 +16,7 @@ public class SocetClient {
     try
     {
         //connects to server on same machine, port6661
-        Socket clientSocket = new Socket("Codinator", 6662);
+        Socket clientSocket = new Socket("", 6662);
         //Set up streams to sent/receove data
         inputStream = new Scanner(new InputStreamReader(clientSocket.getInputStream()));
         outputStream = new PrintWriter(new DataOutputStream(clientSocket.getOutputStream()));
